@@ -1,0 +1,32 @@
+<!-- {%extends "pickmywaste/index.html"%}
+{%block title%} View List {% endblock %}
+
+{%block content%}
+<h1>{{ food.food_text }}</h1>
+<ul>
+{% for food in food.choice_set.all %} 
+    <li>{{ food.food_text }}</li>
+{% endfor %}
+
+</ul>
+{% endblock%} -->
+
+
+<!-- component for index -->
+<!-- this is display -->
+
+
+<!-- title
+    description of food
+date published
+expiration
+pre-packaged (y/n)
+refridge/perishable
+-->
+<!-- {% component "calendar" date="2015-06-19" %}
+<div class="food component">store 1 has x <span>2015-06-19</span></div> -->
+
+
+
+
+    

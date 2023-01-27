@@ -1,0 +1,16 @@
+
+{%extends 'pickmywaste/index.html' %}
+
+{% block title%} Create New Listing {%endblock%}
+
+{%block content%}
+Create Page
+<form method="post" action="/create/">
+    {%csrf_token%}
+    {{form.sd_p}} 
+    <button type="submit", name="save" >Create New</button>
+</form>
+{%endblock%}
+
+<!-- creating forms -->
+<!-- django will generate the html to create form for us with {{form}}-->
